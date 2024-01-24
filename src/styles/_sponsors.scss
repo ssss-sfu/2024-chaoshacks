@@ -1,0 +1,51 @@
+@import "./tokens.scss";
+
+#sponsors {
+  text-align: center;
+  p {
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+
+  a {
+    color: $color-text-heading-fallback;
+  }
+}
+
+.sponsors {
+  display: grid;
+  gap: 1.5rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+ 
+  .sponsor {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 66.15%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border-radius: 30px;
+
+    img {
+      height: 10em;
+    }
+
+    grid-column: span 2;
+  }
+
+
+  @include viewport(desktop) {
+    grid-template-columns: repeat(6, 1fr);
+    .sponsor {
+      grid-column: span 3;
+    }
+    .sponsor:first-child, .sponsor:nth-child(2) {
+      grid-column: span 6;
+    }
+
+  }
+
+}

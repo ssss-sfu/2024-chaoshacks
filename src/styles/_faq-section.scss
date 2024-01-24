@@ -1,18 +1,25 @@
 @import 'tokens.scss';
 
 #faq {
-  
+  #faq-container {
+    display: flex;
+    flex-direction: row;
+
+    & > img {
+      max-width: 50%;
+    }
+  }
+
   .list {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 2.75rem;
     
-    @include viewport(desktop) {
-      grid-template-columns: 1fr 1fr;
-    }
+
     
     .faq-item {
-      position: absolute;
+      position: relative;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 66.15%, rgba(255, 255, 255, 0) 100%);
       padding: 2rem;
       border-radius: 2rem;
@@ -42,6 +49,7 @@
           transform: rotate(-90deg);
           filter: saturate(0) brightness(2);
           transition: all 0.25s;
+          width: 1em;
         }
       }
 
@@ -60,6 +68,7 @@
         top: 0;
         transition: all 0.25s;
         display: none;
+        width: 5.5em;
 
         @include viewport(tablet-desktop) {
           display: block;

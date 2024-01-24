@@ -2,13 +2,13 @@
   Colours
 */
 
-$color-background: linear-gradient(180deg, #220e3e 0%, #5bcbff 100%);
-$color-background-footer: linear-gradient(180deg, #5bcbff 0%, #1B0A3F 98.63%);
+$color-background: linear-gradient(180deg, #000 0%, #0A000F 100%);;
+$color-background-footer: linear-gradient(180deg, #15011E 0%, #1B0A3F 98.63%);
 $color-background-button: linear-gradient(270deg, #5bcbff 14.36%, #fd89ff 97.52%);
 
 $color-text: #fff;
-$color-text-heading: linear-gradient(270deg, #9da0a2 2.48%, #fd89ff 97.52%);
-$color-text-heading-fallback: #0BE488; // If linear gradient is not supported, use this
+$color-text-heading: #8ad5ff;
+$color-text-heading-fallback: #e725ff;
 
 /*
   Typography

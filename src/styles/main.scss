@@ -1,9 +1,16 @@
 @use 'tokens.scss';
 @use 'layout.scss';
+@use 'button.scss';
+@use 'the-past.scss';
 @use 'footer.scss';
+@use 'hero-section.scss';
 @use 'nav.scss';
-@use 'faq.scss';
+@use 'sponsors.scss';
+@use 'about-section';
+@use 'faq-section';
+
 @import 'tokens.scss';
+
 
 /*
   CSS Resest by Josh Comeau

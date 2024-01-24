@@ -13,9 +13,7 @@
   z-index: 1;
 
   &.header-scrolled {
-    opacity: 1;
-    background-color: $color-background-footer;
-
+    background-color: black;
   }
   
 
@@ -87,8 +85,9 @@
 
 @include viewport(mobile) {
   .header {
+    opacity: 1;
     flex-direction: column;
     padding: 0;
-    background-color: darkblue;
+    background-color: black;
   }
 }

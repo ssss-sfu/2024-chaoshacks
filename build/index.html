@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/nav-tree.svg" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo.png" />
   <script src="scripts/navbar.js" defer></script>
   <script src="scripts/navbar-hide-scroll.js" defer></script>
-  <title>SystemsHacks | SFU Software Systems SystemsHacks 1970</title>
+  <title>ChaosHacks | SFU Software Systems SystemsHacks 1970</title>
   <meta name="description"
     content="Join SystemsHacks 2023 on March 4th, the annual hackathon from SFU's Software Systems Student Society.">
   <meta name="og:title" property="og:title" content="SystemsHacks | SFU Software Systems SystemsHacks 2023">
@@ -18,37 +18,71 @@
 <body>
   <header class="header">
     <div class="mobile-header">
-      <p>SVG Logo</p>
+      <img class="logo" src="./assets/images/logo.png" alt="Tree logo in navigation" />
       <img class="hamburger" src="./assets/images/bars-solid.svg" alt="hamburger dropdown">
     </div>
 
     <nav class="nav">
       <ul class="list">
         <li><a href="#about-section">About</a></li>
+        <li><a href="#the-past">The Past</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="https://sfussss.org/" target="_blank">SSSS</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="container">
-    <article>
-      <h1>SystemsHacks</h1>
-      <h3>January 1st 1970</h3>
-    </article>
 
+  <div id="intro-image-section" class="container">
+    <div class="bg-placeholder"></div>
+    <img src="./assets/images/hero_main2.png" alt="Main ChaosHacks Hero Image">
+  </div>
+
+  <section id="hero-section" class="container">
+    <article>
+      <h1>ChaosHacks</h1>
+      <h3>March 4th 2023</h3>
+
+      <p>SFU Software Systems Student Society <br />presents their 8th annual hackathon!</p>
+      <br>
+      <p>Applications close X/XX/XX</p>
+      <br>
+      <br>
+      <button class="btn" disabled>Registration Soon</button>
+    </article>
+    <img id="hero-image" src="./assets/images/hero_secondary.png"
+      alt="ChaosHacks 2023 Logo, A purple star, pink face, and neon rabbit" />
   </section>
 
   <section id="about-section" class="container">
     <article>
-      <h2>What is SystemHacks?</h2>
-      <p>SystemHacks is a hackathon. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor numquam aspernatur perspiciatis neque eos deleniti quos placeat dignissimos. Expedita explicabo, cupiditate velit delectus sunt labore nihil neque corrupti fuga cum?
-      Repellendus fugiat sequi facilis ab repellat recusandae. Reiciendis, labore doloremque maxime aut sapiente provident impedit distinctio perspiciatis? Illo similique quisquam reiciendis, reprehenderit ipsa quod non fuga nesciunt, praesentium deserunt aliquam.
+      <h2>What is ChaosHacks?</h2>
+      <p>ChaosHacks is this year’s iteration of the annual SystemsHacks event, a 12-hour beginner-oriented hackathon run
+        by the SFU Software Systems Student Society. SystemsHacks has been organized annually since 2017, with up to 200
+        participants each year. Our goal is to facilitate an encouraging and comfortable environment for beginner
+        hackers to learn new skills.
       </p>
+      <div class="icons-container">
+        <article class="icon-container">
+          <img src="assets/images/about_time.png" alt="Time icon">
+          <h3>12 Hours</h3>
+        </article>
+        <article class="icon-container">
+          <img src="assets/images/about_participants.png" alt="Time icon">
+          <h3>200 Participants</h3>
+        </article>
+        <article class="icon-container">
+          <img src="assets/images/about_location.png" alt="Time icon">
+          <h3>SFU Surrey</h3>
+        </article>
+      </div>
     </article>
+
+    <img id="about-image" src="assets/images/about_blue-face.png" alt="ChaosHacks Blue face">
   </section>
 
-  <section class="container">
+  <section id="ssss-section" class="container">
     <article>
       <h2>Software Systems Student Society</h2>
       <p>Software Systems is a program in Simon Fraser University’s School of Computing Science. Based in the Surrey
@@ -58,10 +92,35 @@
         connections and supplement the academic experience.
       </p>
     </article>
+    <img class="ssss-img" src="assets/images/ssss-about.jpeg"
+    alt="Software Systems 2022/ 2023 executives photo">
+  </section>
+
+  <section id="the-past" class="container the-past">
+    <h2>Past Hackathons</h2>
+    <section>
+      <div>
+        <img src="./assets/images/2023-roothacks.png" alt="RootHacks 2023 banner" />
+        <div>
+          <h3>2023 - RootHacks</h3>
+          <p>The name “RootHacks” reflects a broadly plant-based theme, and we hope to inspire participants to consider how their personal roots can offer them a unique perspective when building their project.</p>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/images/2022-quackathon.png" alt="Quackathon 2022 banner" />
+        <div>
+          <h3>2022 - Quackathon</h3>
+          <p>Create a project broadly duck-based that'll make the judges quack up! Create a duck mascot, identify ducks
+            with AI, and more; you're only limited by your imagination! Think up new and innovative ways to insert a
+            duck wherever into your project!</p>
+        </div>
+      </div>
+    </section>
   </section>
 
   <section id="faq" class="container">
     <h2>FAQs</h2>
+    <div id="faq-container">
     <div class="list">
       <div class="faq-item">
         <input type="checkbox" id="faq-1">
@@ -75,7 +134,7 @@
           beginners. Hackathons are an opportunity to experiment with new tools, or try new ideas. They are also a great
           change to make lasting connections with fellow students, mentors, and industry professionals.
         </p>
-        <img src="./assets/images/icons/fun-fact-leaf.svg" alt="Leaf" />
+        <img src="./assets/images/faqs_purple-star.png" alt="Leaf" />
       </div>
       <div class="faq-item">
         <input type="checkbox" id="faq-2">
@@ -89,7 +148,7 @@
           available to help you work through questions that you may have, and we encourage you and your teammates to
           teach each other as well. Just remember, the primary goal of a hackathon is to learn!
         </p>
-        <img src="./assets/images/icons/fun-fact-leaf.svg" alt="Leaf" />
+        <img src="./assets/images/faqs_purple-star.png" alt="Leaf" />
       </div>
       <div class="faq-item">
         <input type="checkbox" id="faq-3">
@@ -101,7 +160,7 @@
           The theme can be interpreted loosely in whatever way you see fit; it is just a prompt to get you thinking.
           Your project does not necessarily have to be directly related to plants or roots, so get creative!
         </p>
-        <img src="./assets/images/icons/fun-fact-leaf.svg" alt="Leaf" />
+        <img src="./assets/images/faqs_purple-star.png" alt="Leaf" />
       </div>
       <div class="faq-item">
         <input type="checkbox" id="faq-4">
@@ -110,10 +169,11 @@
           <img src="./assets/images/icons/chevron-down.svg" alt="Chevron" />
         </label>
         <p class="content">
-          If you already have a team in mind, each teammate must register individually for SystemsHacks. You do not have to
+          If you already have a team in mind, each teammate must register individually for SystemsHacks. You do not have
+          to
           notify the organizers of your team before the event, but projects must be submitted by a group of 2-4 people.
         </p>
-        <img src="./assets/images/icons/fun-fact-leaf.svg" alt="Leaf" />
+        <img src="./assets/images/faqs_purple-star.png" alt="Leaf" />
       </div>
       <div class="faq-item">
         <input type="checkbox" id="faq-5">
@@ -126,7 +186,7 @@
           morning of the event, there will be a team formation event. We will ask all participants without a team to
           gather somewhere, where you can all form teams on the spot to ensure everyone can participate.
         </p>
-        <img src="./assets/images/icons/fun-fact-leaf.svg" alt="Leaf" />
+        <img src="./assets/images/faqs_purple-star.png" alt="Leaf" />
       </div>
       <div class="faq-item">
         <input type="checkbox" id="faq-6">
@@ -139,14 +199,16 @@
           contribute to your project. They can also help you elaborate your idea in the early stages of the event, so
           don’t hesitate to ask if they have time to chat about your concept!
         </p>
-        <img src="./assets/images/icons/fun-fact-leaf.svg" alt="Leaf" />
+        <img src="./assets/images/faqs_purple-star.png" alt="Leaf" />
       </div>
+    </div>
+    <img src="./assets/images/faqs_main.png" alt="Decorations, neon face and purple tune">
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <img src="./assets/images/footer-seb.png"
+      <img src="./assets/images/footer_neon-teddy.png"
         alt="The Software Systems Mascot, Seb, with a seedling sprouting from the top of his head" />
       <div>
         <img src="./assets/images/ssss-logo-full-white.svg"
