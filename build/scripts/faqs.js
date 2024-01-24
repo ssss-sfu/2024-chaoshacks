@@ -31,6 +31,17 @@ const faqsJson = [
   },
 ];
 
+ 
+// Create the image element for the chevron
+var chevronImg = document.createElement("img");
+chevronImg.setAttribute("src", "./assets/images/icons/chevron-down.svg");
+chevronImg.setAttribute("alt", "Chevron");
+
+// Create the image for the purple star
+var purpleStarImg = document.createElement("img");
+purpleStarImg.setAttribute("src", "./assets/images/faqs_purple-star.png");
+purpleStarImg.setAttribute("alt", "Leaf");
+
 const toHtml = (faq, index) => {
    // Create the checkbox input
    var checkboxInput = document.createElement("input");
@@ -44,25 +55,16 @@ const toHtml = (faq, index) => {
    // Create the text content for the label
    var labelText = document.createTextNode(faq.question);
  
-   // Create the image element for the chevron
-   var chevronImg = document.createElement("img");
-   chevronImg.setAttribute("src", "./assets/images/icons/chevron-down.svg");
-   chevronImg.setAttribute("alt", "Chevron");
- 
    // Append the text and image to the label
    label.appendChild(labelText);
-   label.appendChild(chevronImg);
+   label.appendChild(chevronImg.cloneNode());
  
    // Create the paragraph with the content
    var contentParagraph = document.createElement("p");
    contentParagraph.classList.add("content");
    contentParagraph.textContent = faq.answer
  
-   // Create the image for the purple star
-   var purpleStarImg = document.createElement("img");
-   purpleStarImg.setAttribute("src", "./assets/images/faqs_purple-star.png");
-   purpleStarImg.setAttribute("alt", "Leaf");
- 
+  
    // Append all elements to the main container
    var faqItem = document.createElement('div');
    faqItem.classList.add('faq-item');
@@ -70,7 +72,7 @@ const toHtml = (faq, index) => {
    faqItem.appendChild(checkboxInput);
    faqItem.appendChild(label);
    faqItem.appendChild(contentParagraph);
-   faqItem.appendChild(purpleStarImg);
+   faqItem.appendChild(purpleStarImg.cloneNode());
  
    return faqItem;
 }
