@@ -2,14 +2,19 @@
   #exec-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 5em 1em;
+    row-gap: 5em;
+    column-gap: 1em;
+    flex: 1 1 0;
 
     .exec-container {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: flex;
       align-items: center;
-      gap: 0.1em;
 
       .exec-img {
         width: 5em;
@@ -19,9 +24,10 @@
         transition: filter 0.25s ease-in-out;
       }
 
-      .exec-desc {
+      .exec-desc-1, .exec-desc-2 {
         display: none;
         transition: visibility 0.25s ease-in-out;
+
       }
 
       &:hover {
@@ -29,8 +35,23 @@
           filter: grayscale(0%);
         }
 
-        .exec-desc {
+        .exec-desc-1 {
           display: block;
+          position: absolute;
+          width: 50em;
+          top: 125%;
+          left: 50%;
+          transform: translate(-50%, -50%); /* Center the child */
+          text-align: center;
+        }
+        .exec-desc-2 {
+          display: block;
+          position: absolute;
+          width: 50em;
+          top: 155%;
+          left: 50%;
+          transform: translate(-50%, -50%); /* Center the child */
+          text-align: center;
         }
       }
     }

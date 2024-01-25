@@ -36,11 +36,11 @@ function populateExecList() {
     execImg.alt = entry.name;
 
     const execName = document.createElement('p');
-    execName.className = 'exec-desc';
+    execName.className = 'exec-desc-1';
     execName.textContent = `${entry.name}`;
 
     const execRole = document.createElement('p');
-    execRole.className = 'exec-desc';
+    execRole.className = 'exec-desc-2';
     execRole.textContent = `${entry.role}`;
 
     execContainer.appendChild(execImg);
