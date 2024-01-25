@@ -66,9 +66,3 @@ Array.from(execs).forEach((exec, index) => {
     exec.classList.toggle("hovered");
   });
 });
-
-
-{/* <div id="exec-1" class="exec-container">
-<img class="exec-img" src="./assets/images/execs/joshua.jpg" alt="Joshua Li">
-<p class="exec-desc">Joshua Li - President</p>
-</div> */}

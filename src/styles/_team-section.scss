@@ -1,3 +1,6 @@
+@import "_tokens.scss";
+
+
 #team {
   #exec-list {
     display: flex;
@@ -54,6 +57,22 @@
           text-align: center;
         }
       }
+    }
+  }
+}
+
+@include viewport(tablet) {
+  #team {
+    #exec-list {
+      padding: 3em 2em 1em;
+    }
+  }
+}
+
+@include viewport(mobile) {
+  #team {
+    #exec-list {
+      padding: 3em 0em 1em;
     }
   }
 }
