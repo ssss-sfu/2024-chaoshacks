@@ -7,6 +7,14 @@
 
     & > img {
       max-width: 50%;
+
+      @include viewport(tablet) {
+        display: none;
+      }
+
+      @include viewport(mobile) {
+        display: none;
+      }
     }
   }
 
@@ -16,7 +24,6 @@
     gap: 2rem;
     margin-top: 2.75rem;
     
-
     
     .faq-item {
       position: relative;

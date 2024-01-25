@@ -12,6 +12,13 @@
     column-gap: 1em;
     flex: 1 1 0;
 
+    @include viewport(tablet-desktop) {
+      padding: 3em 2em 1em;
+    }
+    
+    @include viewport(mobile) {
+      padding: 3em 0em 1em;
+    }
     .exec-container {
       position: relative;
       display: flex;
@@ -57,22 +64,6 @@
           text-align: center;
         }
       }
-    }
-  }
-}
-
-@include viewport(tablet) {
-  #team {
-    #exec-list {
-      padding: 3em 2em 1em;
-    }
-  }
-}
-
-@include viewport(mobile) {
-  #team {
-    #exec-list {
-      padding: 3em 0em 1em;
     }
   }
 }
