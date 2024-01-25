@@ -1,0 +1,38 @@
+#team {
+  #exec-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+
+    .exec-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex;
+      align-items: center;
+      gap: 0.1em;
+
+      .exec-img {
+        width: 5em;
+        height: 5em;
+        object-fit: cover;
+        filter: grayscale(100%);
+        transition: filter 0.25s ease-in-out;
+      }
+
+      .exec-desc {
+        display: none;
+        transition: visibility 0.25s ease-in-out;
+      }
+
+      &:hover {
+        .exec-img {
+          filter: grayscale(0%);
+        }
+
+        .exec-desc {
+          display: block;
+        }
+      }
+    }
+  }
+}
