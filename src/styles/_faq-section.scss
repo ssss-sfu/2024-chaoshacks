@@ -6,7 +6,9 @@
     flex-direction: row;
 
     & > img {
-      max-width: 50%;
+      max-width: 45%;
+      width: 30em;
+      height: 50em;
 
       @include viewport(tablet) {
         display: none;
