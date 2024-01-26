@@ -15,7 +15,7 @@
   }
 
   #about-image {
-    max-width: 27.5em;
+    max-width: min(27.5em, 100vw);
   }
   
   display: flex;
