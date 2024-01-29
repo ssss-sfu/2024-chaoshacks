@@ -12,7 +12,7 @@ const faqsJson = [
   {
     question: "How should the theme be integrated into my project?",
     answer:
-      "The theme can be interpreted loosely in whatever way you see fit; it is just a prompt to get you thinking. Your project does not necessarily have to be directly related to plants or roots, so get creative!",
+      "The theme can be interpreted loosely in whatever way you see fit; it is just a prompt to get you thinking. There’s plenty of ways chaos manifests, so you can pretty much take it in whichever way works for you. ",
   },
   {
     question: "How can I register my team?",
@@ -31,7 +31,6 @@ const faqsJson = [
   },
 ];
 
- 
 // Create the image element for the chevron
 var chevronImg = document.createElement("img");
 chevronImg.setAttribute("src", "./assets/images/icons/chevron-down.svg");
@@ -43,42 +42,41 @@ purpleStarImg.setAttribute("src", "./assets/images/faqs_purple-star.png");
 purpleStarImg.setAttribute("alt", "Leaf");
 
 const toHtml = (faq, index) => {
-   // Create the checkbox input
-   var checkboxInput = document.createElement("input");
-   checkboxInput.setAttribute("type", "checkbox");
-   checkboxInput.setAttribute("id",`faq-${index}`);
- 
-   // Create the label for the checkbox
-   var label = document.createElement("label");
-   label.setAttribute("for", `faq-${index}`);
- 
-   // Create the text content for the label
-   var labelText = document.createTextNode(faq.question);
- 
-   // Append the text and image to the label
-   label.appendChild(labelText);
-   label.appendChild(chevronImg.cloneNode());
- 
-   // Create the paragraph with the content
-   var contentParagraph = document.createElement("p");
-   contentParagraph.classList.add("content");
-   contentParagraph.textContent = faq.answer
- 
-  
-   // Append all elements to the main container
-   var faqItem = document.createElement('div');
-   faqItem.classList.add('faq-item');
+  // Create the checkbox input
+  var checkboxInput = document.createElement("input");
+  checkboxInput.setAttribute("type", "checkbox");
+  checkboxInput.setAttribute("id", `faq-${index}`);
 
-   faqItem.appendChild(checkboxInput);
-   faqItem.appendChild(label);
-   faqItem.appendChild(contentParagraph);
-   faqItem.appendChild(purpleStarImg.cloneNode());
- 
-   return faqItem;
-}
+  // Create the label for the checkbox
+  var label = document.createElement("label");
+  label.setAttribute("for", `faq-${index}`);
+
+  // Create the text content for the label
+  var labelText = document.createTextNode(faq.question);
+
+  // Append the text and image to the label
+  label.appendChild(labelText);
+  label.appendChild(chevronImg.cloneNode());
+
+  // Create the paragraph with the content
+  var contentParagraph = document.createElement("p");
+  contentParagraph.classList.add("content");
+  contentParagraph.textContent = faq.answer;
+
+  // Append all elements to the main container
+  var faqItem = document.createElement("div");
+  faqItem.classList.add("faq-item");
+
+  faqItem.appendChild(checkboxInput);
+  faqItem.appendChild(label);
+  faqItem.appendChild(contentParagraph);
+  faqItem.appendChild(purpleStarImg.cloneNode());
+
+  return faqItem;
+};
 const faqHtmlList = faqsJson.map((item, index) => toHtml(item, index));
 const faqsList = document.querySelector("#faq-list");
 
-faqHtmlList.forEach(faqItem => {
+faqHtmlList.forEach((faqItem) => {
   faqsList.appendChild(faqItem);
-})
+});
