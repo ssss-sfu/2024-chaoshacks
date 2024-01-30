@@ -43,7 +43,7 @@
     .sponsor {
       grid-column: span 3;
     }
-    .sponsor:first-child, .sponsor:nth-child(2) {
+    .sponsor.big {
       grid-column: span 6;
     }
 
