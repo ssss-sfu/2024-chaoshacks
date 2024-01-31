@@ -1,9 +1,9 @@
-@import 'tokens.scss';
+@import "tokens.scss";
 
 #faq {
   #faq-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     & > img {
       max-width: 45%;
@@ -21,20 +21,26 @@
   }
 
   .list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 2rem;
     margin-top: 2.75rem;
-    
-    
+
+    @include viewport(desktop) {
+      grid-template-columns: 1fr 1fr;
+    }
+
     .faq-item {
       position: relative;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 66.15%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 66.15%,
+        rgba(255, 255, 255, 0) 100%
+      );
       padding: 2rem;
       border-radius: 2rem;
       max-width: 32.69rem;
       height: fit-content;
-      
+
       @include viewport(tablet-desktop) {
         margin-left: 7rem;
       }
@@ -68,8 +74,6 @@
         transition: max-height 0.5s;
       }
 
-    
-
       & > img {
         position: absolute;
         filter: saturate(0) brightness(2);
@@ -83,9 +87,7 @@
           display: block;
         }
       }
-      
 
-      
       input:checked {
         & ~ label {
           color: $color-text-heading-fallback;
@@ -105,5 +107,10 @@
         }
       }
     }
+  }
+
+  #faq-img {
+    width: 20em;
+    margin: auto;
   }
 }

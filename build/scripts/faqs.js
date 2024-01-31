@@ -1,5 +1,15 @@
 const faqsJson = [
   {
+    question: "Why ChaosHacks?",
+    answer:
+      "We decided on ChaosHacks as the theme because there’s so many ways we interact with chaos in our lives that can be the source of inspiration. From a cluttered computer desktop to an unpredictable bus schedule, we want you to have a look at those chaotic things in your life and think about ways you can eliminate it, control it, or even embrace it! And like with chaos itself,  everyone may start with the same theme but will bring their own interpretations to it that will result in cool and unique projects.",
+  },
+  {
+    question: "Where is the venue?",
+    answer:
+      "ChaosHacks will take place in the SFU’s state-of-the-art Engineering Building, located in Surrey Central. Opened in 2019, this building is home to SFU’s Mechatronics Systems Engineering, Sustainable Energy Engineering, and Software Systems programs and has the best in campus design SFU has to offer with its lecture theaters, labs, and work spaces.",
+  },
+  {
     question: "What is a hackathon?",
     answer:
       "A hackathon is an event where teams of 2-4 develop (or “hack”) a project in a short period of time. Hackathons are often 24 hours or a weekend, but SystemsHacks is 12 hours to make the experience less imposing for beginners. Hackathons are an opportunity to experiment with new tools, or try new ideas. They are also a great change to make lasting connections with fellow students, mentors, and industry professionals.",
