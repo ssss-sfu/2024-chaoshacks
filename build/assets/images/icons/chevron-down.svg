@@ -1,21 +1,16 @@
-<svg width="49" height="38" viewBox="0 0 49 38" fill="invert(30%) sepia(78%) saturate(4750%) hue-rotate(279deg) brightness(105%) contrast(111%);" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_260_152)">
-<path d="M41 4.63623L24.5 25.6362L8 4.63623" stroke="url(#paint0_linear_260_152)" stroke-width="7.64706" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 49 38" style="enable-background:new 0 0 49 38;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:url(#SVGID_1_);stroke-width:7.6471;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="24.5" y1="14.8848" x2="24.5" y2="34.8428" gradientTransform="matrix(1 0 0 -1 0 40)">
+		<stop  offset="0" style="stop-color:#E725FF"/>
+		<stop  offset="1" style="stop-color:#E725FF"/>
+	</linearGradient>
+	<path class="st0" d="M41,4.6l-16.5,21L8,4.6"/>
 </g>
-<defs>
-<filter id="filter0_d_260_152" x="0.1763" y="0.8125" width="48.6474" height="36.6472" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_260_152"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_260_152" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_260_152" x1="24.5" y1="25.1152" x2="24.5" y2="5.15722" gradientUnits="userSpaceOnUse">
-  <stop stop-color="#e725ff"/>
-  <stop offset="1" stop-color="#e725ff"/>
-</linearGradient>
-</defs>
 </svg>
