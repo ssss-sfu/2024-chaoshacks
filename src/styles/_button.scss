@@ -20,9 +20,11 @@
   }
 
   &:disabled {
+    filter: grayscale(100%);
     &:hover {
       cursor: not-allowed;
       transform: none;
     }
   }
+
 }
