@@ -10,6 +10,7 @@
   padding: 0.75rem 1.5rem;
   font-weight: 600;
   transition: all $transition-speed-fast ease;
+  width: fit-content;
 
   &:hover {
     transform: translateY(-0.25rem);
@@ -21,6 +22,7 @@
 
   &:disabled {
     filter: grayscale(100%);
+    font-size: 1.2em;
     &:hover {
       cursor: not-allowed;
       transform: none;
