@@ -31,12 +31,14 @@
     display: grid;
     grid-auto-flow: column;
     list-style-type: none;
+    align-items: center;
     column-gap: 20px;
 
     li {
       width: min-content;
       white-space: nowrap;
-      a {
+      
+      a:not(.handbook) {
         color: inherit;
         text-decoration: inherit;
         font-weight: bold;
@@ -44,6 +46,25 @@
 
         &:hover {
           color: $color-text-heading-fallback;
+        }
+      }
+
+      &.handbook {
+        background: $color-background-button;
+        color: $color-text;
+        border: none;
+        cursor: pointer;
+        border-radius: 1.88rem;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        transition: all $transition-speed-fast ease;
+      
+        &:hover {
+          transform: translateY(-0.25rem);
+        }
+      
+        &:active {
+          transform: translateY(0.25rem);
         }
       }
     }
