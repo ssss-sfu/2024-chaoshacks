@@ -35,9 +35,28 @@
     margin-right: -5%;
   }
 
-  @include viewport(tablet) {
+  @include viewport(desktop) {
+    h1 {
+      font-size: 4em;
+    }
+  }
+
+  @include viewport(tablet-desktop) {
+    h1 {
+      font-size: 3.5em;
+    }
     img#hero-image {
-      width: 45%;
+      width: min(32em, 60vw);
+    }
+  }
+
+  @include viewport(tablet) {
+    h1 {
+      font-size: 2.5em;
+    }
+
+    img#hero-image {
+      width: min(25em, 50vw);
     }
   }
 
