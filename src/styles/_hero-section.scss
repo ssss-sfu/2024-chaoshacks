@@ -30,7 +30,9 @@
   }
 
   img#hero-image {
-    width: 22em;
+    width: 32em;
+    margin-left: -5%;
+    margin-right: -5%;
   }
 
   @include viewport(tablet) {
